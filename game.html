@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE Clicker</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+</head>
+<body onload="initializeGame();">
+
+
+    <h1>Username: <span id="username"></span></h1>
+    <h2>Current gold: <span id="gold"></span></h2>
+
+    <button onclick="clickGold();">Get Gold</button>
+    <button onclick="buyEquipment('shovel');">Buy Shovel</button>
+    <button onclick="buyEquipment('excavator');">Buy Excavator</button>
+    <button onclick="buyEquipment('mine');">Buy Mine</button>
+
+    <br>
+    <h3>Shovel:</h3>
+    <ul>
+        <li>Name: <span id="Nshovel"></span></li>
+        <li>Owned: <span id="Oshovel"></span></li>
+        <li>Cost: <span id="Cshovel"></span></li>
+    </ul>
+    
+    <br>
+    <h3>Excavator:</h3>
+    <ul>
+        <li>Name: <span id="Nexcavator"></span></li>
+        <li>Owned: <span id="Oexcavator"></span></li>
+        <li>Cost: <span id="Cexcavator"></span></li>
+    </ul>
+    
+    <br>
+    <h3>Mine:</h3>
+    <ul>
+        <li>Name: <span id="Nmine"></span></li>
+        <li>Owned: <span id="Omine"></span></li>
+        <li>Cost: <span id="Cmine"></span></li>
+    </ul>
+
+<script src="game.js"></script>
+
+</body>
+</html>
